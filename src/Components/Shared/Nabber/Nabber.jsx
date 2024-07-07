@@ -1,26 +1,30 @@
+import '../../../Styles/glass.css'
 const Nabber = () => {
-    const NavItems = <>
-    <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+  const NavItems = (
+    <>
+      <li>
+        <a>Item 1</a>
+      </li>
+      <li>
+        <a>Parent</a>
+        <ul className="p-2">
+          <li>
+            <a>Submenu 1</a>
+          </li>
+          <li>
+            <a>Submenu 2</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a>Item 3</a>
+      </li>
     </>
+  );
+
   return (
     <>
-      <div className="navbar bg-base-100  justify-between ">
+      <div className="navbar glass bg-opacity-50 justify-between fixed z-50 max-w-screen-xl">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,7 +45,7 @@ const Nabber = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content glass bg-opacity-50 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {NavItems}
             </ul>
@@ -71,7 +75,7 @@ const Nabber = () => {
             </li>
           </ul>
         </div>
-        <div className=" dropdown dropdown-end">
+        <div className="dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
@@ -86,9 +90,9 @@ const Nabber = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content glass bg-opacity-50 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-           {/* {NavItems} */}
+            {/* {NavItems} */}
           </ul>
         </div>
       </div>

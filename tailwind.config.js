@@ -9,6 +9,14 @@ export default {
   },
   plugins: [
     require('daisyui'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
+  variants: {
+    extend: {
+      backdropBlur: ['responsive'],
+      // Add other variants if needed
+    },
+  },
 }
 
